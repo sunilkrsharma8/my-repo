@@ -36,6 +36,22 @@
                        //},
                         filterPlaceholder: 'Search for something...'
                     });
+
+                    ////////////////////
+
+                       $('select').on('change', function(e){
+                            var picker_id=e.target.id;
+                            var selected_option = $(this).find(":selected");
+                            var selected_value = selected_option.val();
+                            var optgroup = selected_option.parent().attr('label');
+                            console.log(optgroup);
+                            switch ( optgroup){
+                                case "group_name":
+
+                                break
+
+                            }
+                    }); 
                 });
             </script>
             <select id="example-enableCollapsibleOptGroups" multiple="multiple">
